@@ -1,4 +1,16 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using NRGi_aspirant_opgave.Data;
+using NRGi_aspirant_opgave.Models;
+
+
 var builder = WebApplication.CreateBuilder(args);
+
+//builder.Services.AddDbContext<NRGi_aspirant_opgaveContext>(options =>
+//    options.UseSqlServer(builder.Configuration.GetConnectionString("NRGi_aspirant_opgaveContext")));
+
+builder.Services.AddDbContext<NRGi_aspirant_opgaveContext>(options =>
+options.UseInMemoryDatabase("Test"));
 
 // Add services to the container.
 
