@@ -10,9 +10,9 @@ namespace NRGi_aspirant_opgave.Controllers
     [ApiController]
     public class PropertiesController : ControllerBase
     {
-        private readonly NRGi_aspirant_opgaveContext _context;
+        private readonly PropertiesContext _context;
 
-        public PropertiesController(NRGi_aspirant_opgaveContext context)
+        public PropertiesController(PropertiesContext context)
         {
             _context = context;
         }

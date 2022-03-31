@@ -1,8 +1,12 @@
 {
   "dependencies": {
+    "mssql2": {
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:ConditionReportsContext"
+    },
     "mssql1": {
       "type": "mssql",
-      "connectionId": "ConnectionStrings:NRGi_aspirant_opgaveContext"
+      "connectionId": "ConnectionStrings:PropertiesContext"
     }
   }
 }
